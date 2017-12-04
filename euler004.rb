@@ -26,7 +26,6 @@ def euler004
     i += 1
     end
 
-  p log
+  n
 end
 
-euler004

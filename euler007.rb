@@ -26,5 +26,5 @@ def euler007
     x += 1
   end
 
-  p "#{n}番目の素数は、#{max_prime}"
+  max_prime
 end

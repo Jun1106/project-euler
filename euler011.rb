@@ -52,5 +52,5 @@ def euler011
     end
   end
 
-  p max_value
+  max_value
 end

@@ -33,5 +33,5 @@ def euler008
     i += 1
   end
 
-  p "#{n + 1}番目から13桁の積が最大 = #{max_nums}"
+  max_nums
 end

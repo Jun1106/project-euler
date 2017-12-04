@@ -9,5 +9,5 @@ def euler006
     y += v * v
   end
 
-  p "#{x} - #{y} = #{x - y}"
+  x - y
 end
