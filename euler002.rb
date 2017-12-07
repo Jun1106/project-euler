@@ -1,17 +1,16 @@
 
 def euler002
-  n = 0
   x = 0
   y = 1
   z = 0
+  n = 0
 
-  while z <= 4000000
+  while z <= 4_000_000
     z = x + y
-    n += z if z % 2 == 0
+    n += z if z.even?
 
     x = y
     y = z
   end
-
-  z
+  n
 end
