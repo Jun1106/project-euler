@@ -4,8 +4,8 @@ def euler014
   cache = {} # 値と桁数のキャッシュ
   digits = 0 # 桁数の保存
   x = 0 # 最長の数列が生成される値
-  
-  (2..1000000).each do |v|
+
+  (2..1_000_000).each do |v|
     n = v # 計算結果を保存する一時変数
     d = 0 # vの桁数
     n_digits = {} # 値と桁数のリスト
@@ -27,11 +27,11 @@ def euler014
       end
     end
 
-    value =  n_digits.values.reverse
-    n_digits.keys.each_with_index {|key, i|
+    value = n_digits.values.reverse
+    n_digits.keys.each_with_index do |key, i|
       cache[key] = value[i]
       cache[key] += cache[n] unless cache[n].nil?
-    }
+    end
 
     cache.store(v, d)
     if digits < d
