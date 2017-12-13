@@ -1,3 +1,4 @@
+#! ruby -E Windows-31J:utf-8
 #!/usr/bin/env ruby
 
 # Project Euler Runner
